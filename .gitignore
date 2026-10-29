@@ -1,0 +1,7 @@
+# Large binaries and raw art assets (persisted in Google Drive)
+*.mp4
+*.mkv
+*.webm
+references/**
+!references/
+!references/README.md
