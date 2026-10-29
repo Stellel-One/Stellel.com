@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.25"/>
+      <stop offset="80%" stop-color="#d4af37" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#040208" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldLinear" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0be"/>
+      <stop offset="50%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#8c6d1f"/>
+    </linearGradient>
+    <path id="textCircle" d="M 200, 200 m -160, 0 a 160,160 0 1,1 320,0 a 160,160 0 1,1 -320,0" fill="none"/>
+  </defs>
+  <rect width="400" height="400" fill="#040208" />
+  <circle cx="200" cy="200" r="190" fill="url(#goldGlow)" />
+  <!-- Outer ornamental border -->
+  <circle cx="200" cy="200" r="185" fill="none" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <circle cx="200" cy="200" r="175" fill="none" stroke="#d4af37" stroke-width="1"/>
+  <circle cx="200" cy="200" r="145" fill="none" stroke="#d4af37" stroke-width="1"/>
+  
+  <!-- Outer circular text -->
+  <text font-family="'Cinzel', 'Playfair Display', Georgia, serif" font-size="11" fill="#d4af37" letter-spacing="4.5">
+    <textPath href="#textCircle" startOffset="5%">
+      STELLEL RESEARCH COLLECTIVE • NOUS MATRIX • DECENTRALIZED COGNITION • MMXXVI •
+    </textPath>
+  </text>
+  
+  <!-- Concentric coordinate rings & ticks -->
+  <circle cx="200" cy="200" r="132" fill="none" stroke="#d4af37" stroke-width="0.75" stroke-opacity="0.6"/>
+  <circle cx="200" cy="200" r="115" fill="none" stroke="#d4af37" stroke-width="0.5" stroke-opacity="0.4"/>
+  
+  <!-- Astrolabe rays / sacred geometry -->
+  <g stroke="#d4af37" stroke-width="0.6" stroke-opacity="0.45">
+    <line x1="200" y1="65" x2="200" y2="335" />
+    <line x1="65" y1="200" x2="335" y2="200" />
+    <line x1="105" y1="105" x2="295" y2="295" />
+    <line x1="105" y1="295" x2="295" y2="105" />
+  </g>
+  
+  <!-- Classical Maiden / Athena Profile Silhouette Artwork -->
+  <g transform="translate(200, 200) scale(0.95) translate(-200, -200)">
+    <!-- Laurel Wreath & Halo -->
+    <path d="M 140,170 C 130,130 160,95 200,95 C 240,95 270,130 260,170" fill="none" stroke="url(#goldLinear)" stroke-width="1.8"/>
+    <!-- Classical Head, Profile & Helmet/Hair Silhouette -->
+    <!-- Stylized Classical Maiden Cameo -->
+    <path d="M 185,120 C 175,115 160,128 162,145 C 164,158 152,170 156,182 C 160,192 150,202 153,212 C 158,225 170,236 182,246 C 196,256 210,266 226,274 C 235,260 238,242 232,228 C 228,218 232,208 236,198 C 242,185 244,170 238,156 C 232,142 225,130 212,124 C 200,118 192,122 185,120 Z" fill="#040208" stroke="url(#goldLinear)" stroke-width="1.5"/>
+    <!-- Fine Intaglio Line Art of Maiden Profile -->
+    <path d="M 188,140 C 195,142 205,145 208,155 C 210,162 206,168 200,170 C 206,173 210,180 207,188 C 204,196 195,202 188,206" fill="none" stroke="#d4af37" stroke-width="1.2"/>
+    <!-- Classical Helmet / Diadem Crest -->
+    <path d="M 172,135 Q 200,110 228,135" fill="none" stroke="#d4af37" stroke-width="1.2"/>
+    <path d="M 180,125 Q 200,98 220,125" fill="none" stroke="#d4af37" stroke-width="0.8"/>
+    <!-- Flowing Chiton & Bust details -->
+    <path d="M 165,225 C 175,235 190,250 215,258 C 235,252 245,240 250,230" fill="none" stroke="#d4af37" stroke-width="1.2"/>
+    <path d="M 180,245 C 195,258 215,268 235,275" fill="none" stroke="#d4af37" stroke-width="0.8"/>
+    <!-- Laurel leaf ornaments around cameo -->
+    <g fill="#d4af37">
+      <polygon points="152,140 144,136 150,146"/>
+      <polygon points="146,160 138,158 144,166"/>
+      <polygon points="144,180 136,182 143,188"/>
+      <polygon points="248,140 256,136 250,146"/>
+      <polygon points="254,160 262,158 256,166"/>
+      <polygon points="256,180 264,182 257,188"/>
+      <!-- Star of Hermes atop crown -->
+      <polygon points="200,82 203,89 210,90 205,95 206,102 200,98 194,102 195,95 190,90 197,89"/>
+    </g>
+  </g>
+
+  <!-- Astrolabe cardinal markers -->
+  <text x="200" y="52" font-family="monospace" font-size="8" fill="#d4af37" text-anchor="middle" letter-spacing="2">000°N</text>
+  <text x="350" y="203" font-family="monospace" font-size="8" fill="#d4af37" text-anchor="middle" letter-spacing="1">090°E</text>
+  <text x="200" y="358" font-family="monospace" font-size="8" fill="#d4af37" text-anchor="middle" letter-spacing="2">180°S</text>
+  <text x="50" y="203" font-family="monospace" font-size="8" fill="#d4af37" text-anchor="middle" letter-spacing="1">270°W</text>
+</svg>

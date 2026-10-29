@@ -3,15 +3,14 @@
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>STELLEL // Autonomous Intelligence &amp; Sacred Compute</title>
-<!-- Material Symbols Outlined -->
+<title>STELLEL RESEARCH // Frontier Open Source Intelligence</title>
+<!-- Material Symbols & Typography -->
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Fonts: Playfair Display, JetBrains Mono, Inter -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Cinzel:wght@500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind CSS -->
+<!-- Tailwind CSS with strict config -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
     tailwind.config = {
@@ -19,620 +18,779 @@
       theme: {
         extend: {
           "colors": {
-            "secondary-fixed": "#ebddff",
-            "tertiary-fixed": "#f0dbff",
-            "tertiary-fixed-dim": "#ddb7ff",
-            "surface-container-lowest": "#100c1b",
-            "on-surface-variant": "#d0c5af",
-            "on-secondary-fixed": "#250059",
-            "secondary": "#d3bbff",
-            "on-primary": "#3c2f00",
-            "tertiary-container": "#d09eff",
-            "on-primary-fixed-variant": "#574500",
-            "surface-bright": "#3c3648",
-            "background": "#151121",
-            "on-primary-fixed": "#241a00",
-            "outline-variant": "#4d4635",
-            "on-tertiary-container": "#6700b0",
-            "error-container": "#93000a",
-            "surface-tint": "#e9c349",
-            "inverse-on-surface": "#332e3f",
-            "on-secondary": "#3f008d",
-            "tertiary": "#e3c2ff",
-            "surface-variant": "#373244",
-            "surface-container-low": "#1e1929",
+            "surface-container-highest": "#38333e",
+            "tertiary-container": "#c0b37d",
             "on-error-container": "#ffdad6",
-            "primary-fixed-dim": "#e9c349",
-            "surface-container-highest": "#373244",
-            "on-secondary-fixed-variant": "#5b00c5",
-            "on-primary-container": "#554300",
-            "outline": "#99907c",
-            "primary": "#f2ca50",
-            "on-error": "#690005",
-            "on-background": "#e8dff6",
-            "surface-container-high": "#2c2738",
+            "surface": "#16111c",
+            "on-tertiary-container": "#4e451a",
+            "secondary-fixed-dim": "#d1bcff",
             "primary-fixed": "#ffe088",
-            "on-tertiary-fixed-variant": "#6900b3",
-            "on-tertiary": "#490080",
-            "error": "#ffb4ab",
-            "surface": "#151121",
-            "surface-container": "#221d2e",
-            "on-secondary-container": "#c7aaff",
-            "secondary-container": "#5d03ca",
-            "inverse-surface": "#e8dff6",
-            "surface-dim": "#151121",
-            "on-surface": "#e8dff6",
-            "on-tertiary-fixed": "#2c0051",
+            "on-secondary": "#3c0090",
+            "surface-bright": "#3d3742",
+            "surface-container-lowest": "#110c16",
+            "on-secondary-fixed-variant": "#5520b3",
+            "tertiary-fixed": "#f1e3a9",
+            "secondary-fixed": "#e9ddff",
+            "error-container": "#93000a",
+            "on-error": "#690005",
+            "outline-variant": "#4d4635",
+            "on-tertiary": "#383006",
+            "surface-container": "#221e28",
+            "secondary-container": "#5724b6",
+            "on-tertiary-fixed": "#211b00",
+            "surface-variant": "#38333e",
+            "on-secondary-fixed": "#23005b",
             "primary-container": "#d4af37",
-            "secondary-fixed-dim": "#d3bbff",
-            "inverse-primary": "#735c00"
+            "on-surface": "#e9dfee",
+            "on-primary": "#3c2f00",
+            "inverse-surface": "#e9dfee",
+            "on-primary-container": "#554300",
+            "on-secondary-container": "#c4abff",
+            "tertiary": "#dccf96",
+            "inverse-primary": "#735c00",
+            "background": "#16111c",
+            "on-surface-variant": "#d0c5af",
+            "secondary": "#d1bcff",
+            "on-primary-fixed-variant": "#574500",
+            "surface-container-low": "#1e1a24",
+            "inverse-on-surface": "#342e39",
+            "on-background": "#e9dfee",
+            "primary": "#f2ca50",
+            "error": "#ffb4ab",
+            "on-primary-fixed": "#241a00",
+            "tertiary-fixed-dim": "#d4c78f",
+            "on-tertiary-fixed-variant": "#4f471b",
+            "outline": "#99907c",
+            "surface-container-high": "#2d2833",
+            "surface-dim": "#16111c",
+            "surface-tint": "#e9c349",
+            "primary-fixed-dim": "#e9c349"
           },
           "borderRadius": {
-            "DEFAULT": "0.25rem",
-            "lg": "0.5rem",
-            "xl": "0.75rem",
+            "DEFAULT": "0px",
+            "lg": "0px",
+            "xl": "0px",
             "full": "9999px"
           },
           "spacing": {
-            "gutter": "1.5rem",
             "space-lg": "1.5rem",
             "space-xs": "0.25rem",
-            "space-sm": "0.5rem",
-            "margin-mobile": "1rem",
-            "space-md": "1rem",
+            "gutter-lg": "2rem",
             "space-xl": "2.5rem",
-            "gutter-mobile": "1rem",
-            "margin": "3rem"
+            "margin-sm": "1rem",
+            "margin-lg": "4rem",
+            "space-md": "1rem",
+            "space-sm": "0.5rem",
+            "gutter": "1.5rem",
+            "margin": "2rem",
+            "gutter-sm": "1rem"
           },
           "fontFamily": {
-            "label-lg": ["JetBrains Mono"],
-            "label-sm": ["JetBrains Mono"],
-            "headline-lg": ["Playfair Display"],
-            "headline-lg-mobile": ["Playfair Display"],
-            "display-lg-mobile": ["Playfair Display"],
+            "headline-2xl-mobile": ["Playfair Display"],
+            "headline-xl": ["Playfair Display"],
+            "body-sm": ["Inter"],
+            "headline-2xl": ["Playfair Display"],
+            "headline-xl-mobile": ["Playfair Display"],
             "body-lg": ["Inter"],
             "headline-sm": ["Playfair Display"],
             "headline-md": ["Playfair Display"],
-            "title-md": ["JetBrains Mono"],
-            "body-md": ["Inter"],
-            "display-lg": ["Playfair Display"],
             "label-md": ["JetBrains Mono"],
-            "body-sm": ["Inter"],
-            "monumental": ["Cinzel", "serif"]
+            "code-lg": ["JetBrains Mono"],
+            "code-md": ["JetBrains Mono"],
+            "headline-lg": ["Playfair Display"],
+            "label-sm": ["JetBrains Mono"],
+            "body-md": ["Inter"]
           },
           "fontSize": {
-            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.08em", "fontWeight": "500" }],
-            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.14em", "fontWeight": "400" }],
-            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
-            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "500" }],
-            "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
-            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
-            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "500" }],
-            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "500" }],
-            "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0.06em", "fontWeight": "500" }],
-            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
-            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
-            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "400" }],
-            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }]
+            "headline-2xl-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "500" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "headline-2xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-xl-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "400" }],
+            "label-md": ["11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "500" }],
+            "code-lg": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "code-md": ["12px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "label-sm": ["9px", { "lineHeight": "12px", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }]
           }
         }
       }
     }
   </script>
 <style>
-    /* Ritual Monospace Scanlines & Void Gradients */
-    .bg-void {
-      background-color: #040208;
+    /* Monolithic Telemetric Custom Tweaks */
+    .crosshair-tl { position: absolute; top: -5px; left: -5px; color: rgba(242, 202, 80, 0.4); font-family: 'JetBrains Mono', monospace; font-size: 10px; line-height: 10px; pointer-events: none; }
+    .crosshair-tr { position: absolute; top: -5px; right: -5px; color: rgba(242, 202, 80, 0.4); font-family: 'JetBrains Mono', monospace; font-size: 10px; line-height: 10px; pointer-events: none; }
+    .crosshair-bl { position: absolute; bottom: -5px; left: -5px; color: rgba(242, 202, 80, 0.4); font-family: 'JetBrains Mono', monospace; font-size: 10px; line-height: 10px; pointer-events: none; }
+    .crosshair-br { position: absolute; bottom: -5px; right: -5px; color: rgba(242, 202, 80, 0.4); font-family: 'JetBrains Mono', monospace; font-size: 10px; line-height: 10px; pointer-events: none; }
+    
+    @keyframes pulse-telemetry {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.3; transform: scale(0.9); }
     }
-    .grid-pattern {
-      background-size: 32px 32px;
-      background-image: 
-        linear-gradient(to right, rgba(212, 175, 55, 0.04) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(212, 175, 55, 0.04) 1px, transparent 1px);
-    }
-    @keyframes orbit-cw {
+    .animate-telemetry { animation: pulse-telemetry 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+
+    @keyframes slow-astrolabe-spin {
       from { transform: rotate(0deg); }
       to { transform: rotate(360deg); }
     }
-    @keyframes orbit-ccw {
-      from { transform: rotate(360deg); }
-      to { transform: rotate(0deg); }
-    }
-    @keyframes pulse-spectral {
-      0%, 100% { opacity: 0.35; filter: drop-shadow(0 0 12px rgba(168, 85, 247, 0.4)); }
-      50% { opacity: 0.7; filter: drop-shadow(0 0 24px rgba(242, 202, 80, 0.6)); }
-    }
-    .spin-slow {
-      animation: orbit-cw 60s linear infinite;
-    }
-    .spin-reverse {
-      animation: orbit-ccw 45s linear infinite;
-    }
-    .pulse-glow {
-      animation: pulse-spectral 6s ease-in-out infinite;
-    }
-    /* Hairline Corner markers */
-    .corner-bracket {
-      position: relative;
-    }
-    .corner-bracket::before {
-      content: "┌";
-      position: absolute;
-      top: -2px;
-      left: -2px;
-      font-family: 'JetBrains Mono', monospace;
-      color: #d4af37;
-      font-size: 10px;
-      line-height: 1;
-      opacity: 0.7;
-    }
-    .corner-bracket::after {
-      content: "┘";
-      position: absolute;
-      bottom: -2px;
-      right: -2px;
-      font-family: 'JetBrains Mono', monospace;
-      color: #d4af37;
-      font-size: 10px;
-      line-height: 1;
-      opacity: 0.7;
-    }
-    /* Terminal Cursor */
-    .terminal-cursor {
-      display: inline-block;
-      width: 7px;
-      height: 14px;
-      background-color: #f2ca50;
-      animation: blink 1s step-end infinite;
-      vertical-align: middle;
-    }
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
-    }
+    .animate-astrolabe { animation: slow-astrolabe-spin 120s linear infinite; }
   </style>
 </head>
-<body class="bg-void text-on-surface font-body-md selection:bg-secondary-container selection:text-secondary-fixed min-h-screen overflow-x-hidden relative">
-<!-- Ambient Backdrop with Nebula Asset Overlay -->
-<div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-<img alt="Stellel Cosmic Latent Space" class="w-full h-full object-cover object-center opacity-30 mix-blend-screen scale-105 filter contrast-125 brightness-90" src="https://lh3.googleusercontent.com/aida/AEtjO1UAe6ajplRCGCrLky7QTGvWUqUzx-2eGbni7qbbrX4fOrGjgesrl9UY6YKiEwt1l2fyTy-5RC8PVT3IWsesQ_uJB5LJDJYEvabL_BEmlrMvarAM2hxGQt0wnm7B25Q7M3pMXX-Sd-4ArWz4GF5Ew39tyt-KAAuThpXeul6pXNTCpH21DnXzcB3VKnuvon4Tx9yXykASa-xM8At5CilweVsThJ4KD86lHgwVMuIMA-sf"/>
-<div class="absolute inset-0 bg-gradient-to-b from-[#040208]/90 via-[#070412]/80 to-[#040208] backdrop-blur-[2px]"></div>
-<div class="absolute inset-0 grid-pattern opacity-60"></div>
-</div>
-<!-- Shared TopNavBar Component Structure (Anchored to JSON) -->
-<header class="sticky top-0 z-50 w-full bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-outline-variant/40 dark:border-outline-variant/40 shadow-2xl dark:shadow-2xl">
-<div class="max-w-[1200px] mx-auto h-16 px-space-lg md:px-margin flex items-center justify-between">
-<!-- Brand Anchor & Winged Hermes Glyph -->
-<div class="flex items-center gap-space-md">
-<div class="flex items-center gap-2 group cursor-pointer">
-<div class="w-8 h-8 rounded-none border border-outline-variant/80 flex items-center justify-center bg-surface-container-lowest text-primary shadow-[0_0_10px_rgba(242,202,80,0.25)]">
-<svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
-<path d="M12 2L4 7v10l8 5 8-5V7L12 2z" stroke="currentColor"></path>
-<path d="M12 6l5 3.5v5L12 18l-5-3.5v-5L12 6z" stroke="#a855f7" stroke-width="1"></path>
-<circle cx="12" cy="12" fill="#f2ca50" r="2"></circle>
-</svg>
-</div>
-<div class="flex flex-col">
-<span class="font-headline-md text-headline-md tracking-tight font-bold text-on-surface dark:text-on-surface leading-none">STELLEL</span>
-<span class="font-label-sm text-label-sm text-primary tracking-widest mt-0.5">RESEARCH PORTAL</span>
+<body class="bg-surface-container-lowest text-on-surface antialiased selection:bg-primary selection:text-on-primary min-h-screen flex flex-col relative overflow-x-hidden font-body-md text-body-md">
+<!-- Background Astrolabe Watermark / Grid Lines -->
+<div class="fixed inset-0 pointer-events-none z-0 opacity-15 overflow-hidden">
+<div class="absolute -right-48 -top-48 w-[900px] h-[900px] rounded-full border border-outline-variant/30 flex items-center justify-center animate-astrolabe">
+<div class="w-[750px] h-[750px] rounded-full border border-primary/20 border-dashed flex items-center justify-center">
+<div class="w-[600px] h-[600px] rounded-full border border-outline-variant/20"></div>
 </div>
 </div>
-<!-- Telemetry Status Pill (Lab Monitor) -->
-<div class="hidden lg:flex items-center gap-2 px-2.5 py-1 border border-outline-variant/40 bg-surface-container-lowest/80 text-on-surface-variant font-label-sm text-label-sm">
-<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
-<span>[ONLINE :: CLOUDFLARE ZERO TRUST :: DOKPLOY PAAS]</span>
+<!-- Fine Structural Coordinate Grid Lines -->
+<div class="w-full h-full bg-[linear-gradient(to_right,rgba(77,70,53,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(77,70,53,0.08)_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
 </div>
-</div>
-<!-- Navigation Links from JSON Anchor -->
-<nav class="hidden md:flex items-center space-x-6">
-<a class="text-primary dark:text-primary font-code-md text-code-md border-b-2 border-primary pb-1 font-label-md text-label-md transition-colors duration-150" href="#telemetry">Telemetry</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant font-code-md text-code-md hover:text-on-surface dark:hover:text-on-surface hover:border-primary/50 hover:text-primary font-label-md text-label-md transition-colors duration-150" href="#projects">Projects</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant font-code-md text-code-md hover:text-on-surface dark:hover:text-on-surface hover:border-primary/50 hover:text-primary font-label-md text-label-md transition-colors duration-150" href="#ecosystem">Ecosystem</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant font-code-md text-code-md hover:text-on-surface dark:hover:text-on-surface hover:border-primary/50 hover:text-primary font-label-md text-label-md transition-colors duration-150" href="#homelab">Homelab</a>
-</nav>
-<!-- Trailing Action Cluster from JSON Anchor -->
+<!-- ================= TOP APP BAR (Shared Component Anchor) ================= -->
+<header class="sticky top-0 z-50 bg-surface-container-lowest/95 backdrop-blur-md border-b border-outline-variant/30 flex justify-between items-center w-full px-space-lg lg:px-margin-lg h-16">
+<!-- Brand Lockup -->
 <div class="flex items-center gap-3">
-<!-- Trailing Icon Actions -->
-<div class="flex items-center space-x-1 text-on-surface-variant">
-<button class="p-1.5 hover:text-primary transition-colors active:scale-[0.98]" title="Terminal Stream">
-<span class="material-symbols-outlined text-[18px]">terminal</span>
-</button>
-<button class="p-1.5 hover:text-primary transition-colors active:scale-[0.98]" title="Zero Trust Shield">
-<span class="material-symbols-outlined text-[18px]">shield</span>
-</button>
-<button class="p-1.5 hover:text-primary transition-colors active:scale-[0.98]" title="Cluster Ping">
-<span class="material-symbols-outlined text-[18px]">circle</span>
-</button>
+<img alt="Official Stellel Classical Maiden Stamp Seal" class="w-8 h-8 rounded-full border border-primary/40 object-cover shadow-[0_0_12px_rgba(242,202,80,0.15)]" src="/assets/maiden_seal.svg"/>
+<a class="text-headline-sm font-headline-sm tracking-widest text-on-surface uppercase hover:text-primary transition-colors duration-150" href="#">
+        STELLEL RESEARCH
+      </a>
 </div>
-<!-- Secondary Action: Docs -->
-<a class="hidden sm:inline-block font-label-sm text-label-sm px-3 py-1.5 border border-outline-variant/60 text-on-surface-variant hover:text-primary hover:border-primary/60 transition-colors uppercase active:scale-[0.98]" href="#docs">
-          Docs
-        </a>
-<!-- Primary Action: Connect -->
-<button class="font-label-md text-label-md font-bold px-4 py-1.5 bg-primary text-on-primary hover:bg-primary-fixed-dim transition-all shadow-[0_0_12px_rgba(242,202,80,0.3)] active:scale-[0.98]">
-          Connect
-        </button>
+<!-- Center Navigation Links -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary font-label-md text-label-md tracking-widest uppercase border-b border-primary pb-0.5" href="#models">Models</a>
+<a class="text-on-surface-variant font-label-md text-label-md tracking-widest uppercase hover:text-primary transition-colors duration-150" href="#hermes">Hermes</a>
+<a class="text-on-surface-variant font-label-md text-label-md tracking-widest uppercase hover:text-primary transition-colors duration-150" href="#research">Research</a>
+<a class="text-on-surface-variant font-label-md text-label-md tracking-widest uppercase hover:text-primary transition-colors duration-150" href="#compute">Compute</a>
+<a class="text-on-surface-variant font-label-md text-label-md tracking-widest uppercase hover:text-primary transition-colors duration-150" href="#about">About</a>
+</nav>
+<!-- Trailing Action & Social Matrix -->
+<div class="flex items-center gap-4">
+<div class="hidden lg:flex items-center gap-3 border-r border-outline-variant/30 pr-4">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-150 flex items-center" href="#terminal-section" title="Terminal">
+<span class="material-symbols-outlined text-lg" data-icon="terminal">terminal</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-150 flex items-center" href="#research" title="Dataset Repository">
+<span class="material-symbols-outlined text-lg" data-icon="dataset">dataset</span>
+</a>
 </div>
+<a class="px-4 py-2 border border-primary text-primary bg-surface-container-lowest font-label-md text-label-md tracking-widest uppercase hover:bg-primary hover:text-on-primary transition-colors duration-150 flex items-center gap-2" href="#terminal-section">
+<span class="w-1.5 h-1.5 bg-primary animate-pulse"></span>
+        Launch Portal
+      </a>
 </div>
 </header>
-<!-- Main Viewport Canvas -->
-<main class="relative z-10 max-w-[1200px] mx-auto px-space-lg md:px-margin pt-space-xl pb-space-xl space-y-28">
-<!-- HERO SECTION -->
-<section class="relative pt-6 md:pt-12">
-<!-- Top Eyebrow Monospace Rule -->
-<div class="flex items-center gap-3 mb-6">
-<span class="text-primary font-label-sm text-label-sm tracking-widest uppercase">:: HERMETIC COMPUTATION &amp; AUTONOMOUS REASONING // CLUSTER NODE ASUS-01 ::</span>
-<div class="h-px flex-1 bg-outline-variant/30"></div>
-<span class="hidden sm:inline-block text-on-surface-variant font-label-sm text-label-sm">LAT: 0.8ms</span>
+<!-- ================= MAIN CONTENT ================= -->
+<main class="flex-grow z-10 flex flex-col">
+<!-- 00 // HERO SECTION -->
+<section class="relative border-b border-outline-variant/30 px-space-lg lg:px-margin-lg pt-16 pb-20 overflow-hidden">
+<!-- Crosshair corners for Hero Monolith -->
+<span class="crosshair-tl">+</span>
+<span class="crosshair-tr">+</span>
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Hero Column -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<!-- Eyebrow Telemetry -->
+<div class="inline-flex items-center gap-3 w-fit border border-outline-variant/40 bg-surface-container-low px-3 py-1.5">
+<span class="w-2 h-2 bg-primary rounded-none animate-telemetry"></span>
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase">
+              FRONTIER OPEN SOURCE RESEARCH // REASONING MATRIX v3.4
+            </span>
 </div>
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-<!-- Left Hero Copy -->
-<div class="lg:col-span-7 space-y-6">
-<h1 class="font-monumental text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tight text-on-surface font-black leading-[1.08]">
-            Architecting <span class="text-primary underline decoration-primary/40 decoration-1 underline-offset-8">Autonomous</span> Intelligence &amp; Sacred Compute
+<!-- Hero Headline -->
+<h1 class="text-headline-2xl-mobile md:text-headline-2xl font-headline-2xl text-on-surface tracking-tight leading-tight">
+            PIONEERING <br/>
+<span class="bg-gradient-to-r from-primary via-tertiary-fixed to-primary-fixed bg-clip-text text-transparent italic">
+              AUTONOMOUS
+            </span> INTELLIGENCE
           </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant/90 max-w-xl leading-relaxed">
-            Personal laboratory and engineering showcase of Stellel: Building multi-agent swarms, self-hosted LLM clusters, and high-throughput geospatial analytics.
+<!-- Hero Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Stellel is an applied artificial intelligence collective architecting next-generation reasoning models, decentralized autonomous agent swarms, and high-throughput homelab compute.
           </p>
-<!-- Dual Call to Action -->
-<div class="flex flex-wrap items-center gap-4 pt-3">
-<a class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-on-primary font-label-lg text-label-lg font-bold tracking-wider uppercase shadow-[0_0_20px_rgba(242,202,80,0.35)] hover:bg-primary-fixed-dim transition-all active:scale-[0.98]" href="#agents">
-<span>Explore Agent Systems</span>
-<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-</a>
-<a class="inline-flex items-center gap-2 px-6 py-3 bg-surface-container-lowest/80 border border-outline-variant/60 text-on-surface hover:border-primary hover:text-primary font-label-lg text-label-lg tracking-wider uppercase transition-all active:scale-[0.98]" href="#telemetry">
-<span class="material-symbols-outlined text-[16px]">monitoring</span>
-<span>View Homelab Telemetry</span>
-</a>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-4 pt-4">
+<a class="px-7 py-3.5 bg-primary-container text-on-primary font-label-md text-label-md tracking-widest uppercase font-semibold hover:bg-primary-fixed transition-colors duration-150 flex items-center gap-2 shadow-[0_0_20px_rgba(212,175,55,0.2)]" href="#models">
+              [ Explore Models ]
+            </a>
+<a class="px-7 py-3.5 bg-surface-container-lowest border border-primary/40 text-on-surface font-label-md text-label-md tracking-widest uppercase hover:border-primary hover:text-primary transition-colors duration-150 flex items-center gap-2" href="#research">
+              [ Read Research ]
+            </a>
 </div>
-<!-- Micro Parameter Metrics Bar -->
-<div class="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 border-t border-outline-variant/30">
+<!-- Telemetry Coordinate Status Bar -->
+<div class="pt-8 border-t border-outline-variant/30 grid grid-cols-2 sm:grid-cols-4 gap-4 font-label-sm text-label-sm text-outline">
 <div>
-<div class="font-label-sm text-label-sm text-primary">CORE REASONER</div>
-<div class="font-label-md text-label-md text-on-surface font-semibold">Hermes 3 8B / 70B</div>
+<span class="block text-outline-variant uppercase">ASCENSION</span>
+<span class="text-on-surface font-label-md text-label-md">RA: 19h 50m</span>
 </div>
 <div>
-<div class="font-label-sm text-label-sm text-primary">CONTEXT HORIZON</div>
-<div class="font-label-md text-label-md text-on-surface font-semibold">128K Dynamic</div>
+<span class="block text-outline-variant uppercase">DECLINATION</span>
+<span class="text-on-surface font-label-md text-label-md">DEC: +08° 52′</span>
 </div>
 <div>
-<div class="font-label-sm text-label-sm text-primary">PRECISION</div>
-<div class="font-label-md text-label-md text-on-surface font-semibold">BF16 Native ExL2</div>
+<span class="block text-outline-variant uppercase">CHRONO EPOCH</span>
+<span class="text-on-surface font-label-md text-label-md">J2026.0</span>
 </div>
 <div>
-<div class="font-label-sm text-label-sm text-primary">SUBSTRATE</div>
-<div class="font-label-md text-label-md text-on-surface font-semibold">Asus PVE Node 01</div>
+<span class="block text-outline-variant uppercase">DISTRIBUTED FABRIC</span>
+<span class="text-primary font-label-md text-label-md">8-WAY TP/PP</span>
 </div>
 </div>
 </div>
-<!-- Right Celestial Astrolabe & Cognitive Node Centerpiece -->
-<div class="lg:col-span-5 flex justify-center items-center">
-<div class="relative w-80 h-80 sm:w-96 sm:h-96 flex items-center justify-center">
-<!-- Outer Geometric Astrolabe Dial -->
-<svg class="absolute inset-0 w-full h-full spin-slow pointer-events-none opacity-40 text-primary" viewbox="0 0 400 400">
-<circle cx="200" cy="200" fill="none" r="190" stroke="currentColor" stroke-dasharray="4 6" stroke-width="1"></circle>
-<circle cx="200" cy="200" fill="none" r="160" stroke="currentColor" stroke-width="0.75"></circle>
-<!-- Cardinal Coordinate Ticks -->
-<text fill="#f2ca50" font-family="JetBrains Mono" font-size="9" letter-spacing="2" text-anchor="middle" x="200" y="24">000° NOUS</text>
-<text fill="#f2ca50" font-family="JetBrains Mono" font-size="9" letter-spacing="2" text-anchor="end" x="378" y="204">090° REASON</text>
-<text fill="#f2ca50" font-family="JetBrains Mono" font-size="9" letter-spacing="2" text-anchor="middle" x="200" y="386">180° CORE</text>
-<text fill="#f2ca50" font-family="JetBrains Mono" font-size="9" letter-spacing="2" text-anchor="start" x="24" y="204">270° AGENT</text>
-<!-- Arc divisions -->
-<path d="M 200,10 L 200,40 M 200,360 L 200,390 M 10,200 L 40,200 M 360,200 L 390,200" stroke="#f2ca50" stroke-width="1"></path>
-</svg>
-<!-- Counter-Rotating Sacred Tensor Matrix -->
-<svg class="absolute inset-8 w-4/5 h-4/5 spin-reverse pointer-events-none opacity-60 text-secondary" viewbox="0 0 300 300">
-<polygon fill="none" points="150,20 280,225 20,225" stroke="#a855f7" stroke-dasharray="3 3" stroke-width="1"></polygon>
-<polygon fill="none" points="150,280 20,75 280,75" stroke="#d09eff" stroke-width="0.8"></polygon>
-<circle cx="150" cy="150" fill="none" r="105" stroke="#f2ca50" stroke-width="0.5"></circle>
-<circle cx="150" cy="150" fill="none" r="75" stroke="#a855f7" stroke-width="1"></circle>
-</svg>
-<!-- Central Luminescent Cognitive Core -->
-<div class="relative w-36 h-36 rounded-full border border-primary/40 bg-surface-container-lowest/90 backdrop-blur-md flex flex-col items-center justify-center p-3 text-center shadow-[0_0_35px_rgba(168,85,247,0.3)] pulse-glow">
-<span class="material-symbols-outlined text-primary text-3xl">psychology</span>
-<span class="font-monumental text-xs font-bold text-on-surface mt-1">HERMES 3</span>
-<span class="font-label-sm text-[9px] text-tertiary">STOCHASTIC ENGINE</span>
-<div class="w-8 h-px bg-primary/40 mt-1"></div>
-<span class="font-label-sm text-[8px] text-primary mt-1">100% REASONING</span>
+<!-- Right Hero Astrolabe Showcase -->
+<div class="lg:col-span-5 relative flex items-center justify-center">
+<div class="relative w-full max-w-[420px] aspect-square border border-outline-variant/40 bg-surface-container-lowest p-4">
+<!-- Corner Crosshairs inside frame -->
+<span class="crosshair-tl">+</span>
+<span class="crosshair-tr">+</span>
+<span class="crosshair-bl">+</span>
+<span class="crosshair-br">+</span>
+<!-- Astrolabe Image Asset -->
+<div class="relative w-full h-full border border-primary/20 overflow-hidden flex items-center justify-center bg-[#040208]">
+<img alt="Celestial Astrolabe Orbital Diagram" class="w-full h-full object-contain filter drop-shadow-[0_0_25px_rgba(212,175,55,0.25)] animate-astrolabe" src="/assets/astrolabe.svg"/>
+<!-- Subtle Telemetry Overlay Tags -->
+<div class="absolute top-3 left-3 bg-surface-container-lowest/80 border border-outline-variant/40 px-2 py-0.5">
+<span class="font-label-sm text-label-sm text-primary tracking-widest">HERMES 3 CORE</span>
 </div>
-<!-- Floating Arc Coordinates -->
-<div class="absolute -bottom-4 bg-surface-container-lowest border border-outline-variant/60 px-3 py-1 font-label-sm text-label-sm text-on-surface-variant">
-              CLUSTER STATE: <span class="text-primary">CONVERGED ◆</span>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/80 border border-outline-variant/40 px-2 py-0.5">
+<span class="font-label-sm text-label-sm text-outline tracking-widest">SYNAPSE // 70B</span>
+</div>
+</div>
+<!-- Floating Micro Monolith Stats -->
+<div class="absolute -bottom-5 -left-5 bg-surface-container-low border border-primary/30 px-3 py-2 text-left shadow-lg">
+<span class="font-label-sm text-label-sm text-outline block">SWARM CONSENSUS</span>
+<span class="font-label-md text-label-md text-primary font-bold">99.982% FIDELITY</span>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- SECTION 2: CORE ARCHITECTURE PILLARS -->
-<section class="space-y-8" id="projects">
-<div class="flex items-center justify-between border-b border-outline-variant/30 pb-4">
+<!-- 01 // ARCHITECTURAL FRAMEWORK (HERMES AGENT PARADIGM) -->
+<section class="border-b border-outline-variant/30 px-space-lg lg:px-margin-lg py-20 bg-surface-container-low/40" id="hermes">
+<div class="max-w-7xl mx-auto">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-outline-variant/20 pb-6 gap-4">
 <div>
-<span class="font-label-sm text-label-sm text-primary uppercase">[ SECTOR 01 // ARCHITECTURAL PILLARS ]</span>
-<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1">System Capabilities &amp; Doctrine</h2>
+<div class="font-label-sm text-label-sm text-primary tracking-widest uppercase mb-1">
+              SEC.01 // ARCHITECTURAL FRAMEWORK
+            </div>
+<h2 class="text-headline-xl font-headline-xl text-on-surface">
+              The Hermes Agent Paradigm
+            </h2>
 </div>
-<div class="hidden sm:flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
-<span>SPEC: HERMETIC 2026.1</span>
-<span class="text-primary">✦</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+            Architected for unbounded agentic execution, programmatic code compilation, and verified deductive reasoning chains.
+          </p>
 </div>
-</div>
+<!-- 3-Column Architecture Bento Grid -->
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<!-- Pillar 1: Autonomous Multi-Agent Swarms -->
-<div class="corner-bracket bg-surface-container-lowest border border-outline-variant/30 p-space-lg flex flex-col justify-between hover:border-primary/50 transition-colors group">
-<div class="space-y-4">
-<div class="flex items-center justify-between">
-<span class="font-label-sm text-label-sm text-primary">001 // AGENT SWARMS</span>
-<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">smart_toy</span>
+<!-- Monolith 1: Neural Core -->
+<div class="relative bg-surface-container-lowest border border-outline-variant/30 p-8 flex flex-col justify-between group hover:border-primary/50 transition-colors duration-150">
+<span class="crosshair-tl">+</span>
+<span class="crosshair-tr">+</span>
+<div>
+<div class="flex items-center justify-between border-b border-outline-variant/20 pb-3 mb-6">
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">MODULE 01</span>
+<span class="w-1.5 h-1.5 bg-primary"></span>
 </div>
-<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface group-hover:text-primary transition-colors">
-              Autonomous Multi-Agent Swarms
-            </h3>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-              Custom agent orchestrations leveraging the Hermes Agent harness, tool-calling execution rings, recursive self-correction heuristics, and autonomous task delegation.
-            </p>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">
+                Hermes 3 Neural Core
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+                Frontier general-purpose open reasoning model trained on rigorous synthetic curricula. Features structured JSON-schema emission and native chain-of-thought recursive validation.
+              </p>
 </div>
-<div class="pt-6 mt-6 border-t border-outline-variant/20 flex flex-wrap gap-2">
-<span class="px-2 py-0.5 bg-surface-container-high font-label-sm text-label-sm text-on-surface border border-outline-variant/40">HERMES 3 HARNESS</span>
-<span class="px-2 py-0.5 bg-surface-container-high font-label-sm text-label-sm text-tertiary border border-outline-variant/40">TOOL-CALLING</span>
-<span class="px-2 py-0.5 bg-surface-container-high font-label-sm text-label-sm text-primary border border-outline-variant/40">RECURSIVE RAG</span>
+<div class="pt-4 border-t border-outline-variant/20 space-y-2">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-outline uppercase">CONTEXT_WINDOW:</span>
+<span class="text-primary font-bold">128,000 TOKENS</span>
 </div>
-</div>
-<!-- Pillar 2: Esoteric Homelab Infrastructure -->
-<div class="corner-bracket bg-surface-container-lowest border border-outline-variant/30 p-space-lg flex flex-col justify-between hover:border-primary/50 transition-colors group">
-<div class="space-y-4">
-<div class="flex items-center justify-between">
-<span class="font-label-sm text-label-sm text-primary">002 // HOMELAB FORGE</span>
-<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">dns</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface group-hover:text-primary transition-colors">
-              Esoteric Homelab Infrastructure
-            </h3>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-              Bare-metal Proxmox hypervisors, Dokploy container automation, sub-millisecond local tensor inference, Bitwarden encrypted vaulting, and Cloudflare Zero Trust mesh tunnels.
-            </p>
-</div>
-<div class="pt-6 mt-6 border-t border-outline-variant/20 flex flex-wrap gap-2">
-<span class="px-2 py-0.5 bg-surface-container-high font-label-sm text-label-sm text-on-surface border border-outline-variant/40">PROXMOX VE 8</span>
-<span class="px-2 py-0.5 bg-surface-container-high font-label-sm text-label-sm text-tertiary border border-outline-variant/40">DOKPLOY PAAS</span>
-<span class="px-2 py-0.5 bg-surface-container-high font-label-sm text-label-sm text-primary border border-outline-variant/40">ZERO TRUST</span>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-outline uppercase">ARCHITECTURE:</span>
+<span class="text-on-surface">DENSE &amp; MOE HYBRID</span>
 </div>
 </div>
-<!-- Pillar 3: Geointelligence & Spatial Engine -->
-<div class="corner-bracket bg-surface-container-lowest border border-outline-variant/30 p-space-lg flex flex-col justify-between hover:border-primary/50 transition-colors group">
-<div class="space-y-4">
-<div class="flex items-center justify-between">
-<span class="font-label-sm text-label-sm text-primary">003 // GEOINTELLIGENCE</span>
-<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">public</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface group-hover:text-primary transition-colors">
-              Geointelligence &amp; Spatial Engine
-            </h3>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-              Spatial ML pipeline ingestion, satellite multispectral automated analysis, vector coordinate modeling, and integration with the QueApp Colombian Agro-Geomarketplace.
-            </p>
+<!-- Monolith 2: Sandbox Telemetry -->
+<div class="relative bg-surface-container-lowest border border-outline-variant/30 p-8 flex flex-col justify-between group hover:border-primary/50 transition-colors duration-150">
+<span class="crosshair-tl">+</span>
+<span class="crosshair-tr">+</span>
+<div>
+<div class="flex items-center justify-between border-b border-outline-variant/20 pb-3 mb-6">
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">MODULE 02</span>
+<span class="w-1.5 h-1.5 bg-secondary"></span>
 </div>
-<div class="pt-6 mt-6 border-t border-outline-variant/20 flex flex-wrap gap-2">
-<span class="px-2 py-0.5 bg-surface-container-high font-label-sm text-label-sm text-on-surface border border-outline-variant/40">POSTGIS VECTOR</span>
-<span class="px-2 py-0.5 bg-surface-container-high font-label-sm text-label-sm text-tertiary border border-outline-variant/40">DANE / SIPSA</span>
-<span class="px-2 py-0.5 bg-surface-container-high font-label-sm text-label-sm text-primary border border-outline-variant/40">QUEAPP PIPELINE</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">
+                Autonomous Tool Sandbox
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+                Direct integration with sandboxed kernel runtimes. Dynamic function registration, continuous self-correction on exit codes, and isolated deterministic container execution.
+              </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 space-y-2">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-outline uppercase">TOOL RUNTIME:</span>
+<span class="text-primary font-bold">ISOLATED WASM/E2B</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-outline uppercase">EXEC LATENCY:</span>
+<span class="text-on-surface">&lt; 14.8MS P99</span>
+</div>
+</div>
+</div>
+<!-- Monolith 3: Alignment Matrix -->
+<div class="relative bg-surface-container-lowest border border-outline-variant/30 p-8 flex flex-col justify-between group hover:border-primary/50 transition-colors duration-150">
+<span class="crosshair-tl">+</span>
+<span class="crosshair-tr">+</span>
+<div>
+<div class="flex items-center justify-between border-b border-outline-variant/20 pb-3 mb-6">
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">MODULE 03</span>
+<span class="w-1.5 h-1.5 bg-primary"></span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">
+                Neutral-Objective Alignment
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+                Uncompromising commitment to unfiltered truth seeking and rigorous academic compliance. Neutral epistemic boundaries without artificial conversational neuroses.
+              </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 space-y-2">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-outline uppercase">COMPLIANCE:</span>
+<span class="text-primary font-bold">RESEARCH GRADE</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-outline uppercase">QUANTUM:</span>
+<span class="text-on-surface">FP8 / BF16 NATIVE</span>
+</div>
+</div>
 </div>
 </div>
 </div>
 </section>
-<!-- SECTION 3: LIVE SYSTEM TELEMETRY CONSOLE -->
-<section class="space-y-6" id="telemetry">
-<div class="flex items-center justify-between">
+<!-- 02 // RESEARCH & PUBLICATIONS -->
+<section class="border-b border-outline-variant/30 px-space-lg lg:px-margin-lg py-20" id="research">
+<div class="max-w-7xl mx-auto">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-outline-variant/20 pb-6 gap-4">
+<div>
+<div class="font-label-sm text-label-sm text-primary tracking-widest uppercase mb-1">
+              SEC.02 // FRONTIER LITERATURE
+            </div>
+<h2 class="text-headline-xl font-headline-xl text-on-surface">
+              Peer-Reviewed Publications
+            </h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase">INDEXED VIA ARXIV &amp; OPEN SCIENCE REPOSITORIES</span>
+</div>
+<!-- Technical Paper List -->
+<div class="divide-y divide-outline-variant/20 border-t border-b border-outline-variant/30">
+<!-- Paper 01 -->
+<div class="py-6 px-4 hover:bg-surface-container-low transition-colors duration-150 flex flex-col lg:flex-row lg:items-center justify-between gap-6 group">
+<div class="space-y-2 max-w-3xl">
 <div class="flex items-center gap-3">
-<span class="font-label-sm text-label-sm text-primary uppercase">[ SECTOR 02 // REALTIME CONSOLE ]</span>
-<div class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></div>
+<span class="font-label-sm text-label-sm text-primary tracking-widest">arXiv:2408.11857</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-sm text-label-sm text-outline">SEPTEMBER 2024</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-sm text-label-sm text-tertiary">STELLEL COLLECTIVE</span>
 </div>
-<div class="font-label-sm text-label-sm text-on-surface-variant">HOST: node-asus // RUNTIME: DOKPLOY</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                Hermes 3: Technical Report on Open-Weight Frontier Autonomous Reasoning
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Comprehensive training dynamics, synthetic instruction mixture ablation, and agentic benchmark performance evaluations across Llama-3.1 fine-tuning stages.
+              </p>
 </div>
-<!-- Linux / Hermes CLI Window -->
-<div class="border border-outline-variant/50 bg-[#070412]/95 shadow-[0_0_30px_rgba(0,0,0,0.8)] backdrop-blur-md">
-<!-- Terminal Titlebar -->
-<div class="h-9 px-4 bg-surface-container-low border-b border-outline-variant/40 flex items-center justify-between font-label-sm text-label-sm">
+<div class="flex items-center gap-3 shrink-0">
+<a class="px-3 py-1.5 border border-outline-variant/40 hover:border-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="description">description</span>
+                [ PDF ]
+              </a>
+<a class="px-3 py-1.5 border border-outline-variant/40 hover:border-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="code">code</span>
+                [ REPO ]
+              </a>
+</div>
+</div>
+<!-- Paper 02 -->
+<div class="py-6 px-4 hover:bg-surface-container-low transition-colors duration-150 flex flex-col lg:flex-row lg:items-center justify-between gap-6 group">
+<div class="space-y-2 max-w-3xl">
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-primary tracking-widest">arXiv:2501.04921</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-sm text-label-sm text-outline">JANUARY 2025</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-sm text-label-sm text-tertiary">STELLEL SYSTEMS TEAM</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                Decentralized Reinforcement Learning via Alchemical Consensus
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Novel peer-to-peer RLHF architectures facilitating distributed gradient synchronization across untrusted commodity hardware without central parameter servers.
+              </p>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<a class="px-3 py-1.5 border border-outline-variant/40 hover:border-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="description">description</span>
+                [ PDF ]
+              </a>
+<a class="px-3 py-1.5 border border-outline-variant/40 hover:border-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="code">code</span>
+                [ REPO ]
+              </a>
+</div>
+</div>
+<!-- Paper 03 -->
+<div class="py-6 px-4 hover:bg-surface-container-low transition-colors duration-150 flex flex-col lg:flex-row lg:items-center justify-between gap-6 group">
+<div class="space-y-2 max-w-3xl">
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-primary tracking-widest">arXiv:2411.08942</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-sm text-label-sm text-outline">DECEMBER 2024</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-sm text-label-sm text-tertiary">COGNITIVE ALIGNMENT LAB</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                Atropos: Dynamic Environment Optimization for Agent Swarms
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Autonomous gym generation frameworks allowing swarms of Hermes agents to self-author and self-grade continuous domain-specific simulation challenges.
+              </p>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<a class="px-3 py-1.5 border border-outline-variant/40 hover:border-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="description">description</span>
+                [ PDF ]
+              </a>
+<a class="px-3 py-1.5 border border-outline-variant/40 hover:border-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="code">code</span>
+                [ REPO ]
+              </a>
+</div>
+</div>
+<!-- Paper 04 -->
+<div class="py-6 px-4 hover:bg-surface-container-low transition-colors duration-150 flex flex-col lg:flex-row lg:items-center justify-between gap-6 group">
+<div class="space-y-2 max-w-3xl">
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-primary tracking-widest">TECH-BRIEF 09</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-sm text-label-sm text-outline">NOVEMBER 2024</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-sm text-label-sm text-tertiary">STELLEL PROTOCOL GROUP</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                DisTrO: Distributed Training Over Internet Scale Heterogeneous Bandwidth
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Breakthrough optimizer compression reducing all-reduce communication overhead by 850x, enabling worldwide home-GPU clusters to train multi-billion parameter foundations.
+              </p>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<a class="px-3 py-1.5 border border-outline-variant/40 hover:border-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="description">description</span>
+                [ PDF ]
+              </a>
+<a class="px-3 py-1.5 border border-outline-variant/40 hover:border-primary text-on-surface font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="code">code</span>
+                [ REPO ]
+              </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 03 // INFRASTRUCTURE MATRIX (COMPUTE CLUSTER TELEMETRY) -->
+<section class="border-b border-outline-variant/30 px-space-lg lg:px-margin-lg py-20 bg-surface-container-low/20" id="compute">
+<div class="max-w-7xl mx-auto">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-outline-variant/20 pb-6 gap-4">
+<div>
+<div class="font-label-sm text-label-sm text-primary tracking-widest uppercase mb-1">
+              SEC.03 // INFRASTRUCTURE MATRIX
+            </div>
+<h2 class="text-headline-xl font-headline-xl text-on-surface">
+              Decentralized High-Throughput Compute
+            </h2>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-primary">
+<span class="w-2 h-2 bg-primary animate-pulse"></span>
+            CLUSTER TELEMETRY LIVE // NODE ID: 0x9B1A
+          </div>
+</div>
+<!-- Monolithic Stat Matrix -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+<div class="p-6 border border-outline-variant/30 bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-outline block mb-2">ACTIVE NODES</span>
+<span class="font-label-md text-2xl text-on-surface font-bold block mb-1">4,096 GPUs</span>
+<span class="font-label-sm text-label-sm text-primary">H100 &amp; H200 SXM5 ARRAY</span>
+</div>
+<div class="p-6 border border-outline-variant/30 bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-outline block mb-2">CLUSTER UTILIZATION</span>
+<span class="font-label-md text-2xl text-primary font-bold block mb-1">98.4%</span>
+<span class="font-label-sm text-label-sm text-outline">RUNNING SFT / DPO EPOCHS</span>
+</div>
+<div class="p-6 border border-outline-variant/30 bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-outline block mb-2">COMPUTE CAPACITY</span>
+<span class="font-label-md text-2xl text-on-surface font-bold block mb-1">16.38 PFLOPS</span>
+<span class="font-label-sm text-label-sm text-tertiary">FP8 NATIVE TENSOR CORE</span>
+</div>
+<div class="p-6 border border-outline-variant/30 bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-outline block mb-2">INTERCONNECT FABRIC</span>
+<span class="font-label-md text-2xl text-on-surface font-bold block mb-1">3.2 Tbps</span>
+<span class="font-label-sm text-label-sm text-outline">INFINIBAND QUANTUM-2</span>
+</div>
+</div>
+<!-- Node Rack Grid Visualization -->
+<div class="border border-outline-variant/30 bg-surface-container-lowest p-6">
+<div class="flex items-center justify-between border-b border-outline-variant/20 pb-4 mb-6 font-label-sm text-label-sm">
+<span class="text-outline uppercase">SWARM FABRIC NODE TOPOLOGY (PRIMARY PARTITION)</span>
+<span class="text-primary uppercase">[ STATUS: NOMINAL ]</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-3">
+<!-- Node Item 1 -->
+<div class="p-3 border border-outline-variant/30 bg-surface-container-low text-center">
+<div class="flex items-center justify-center gap-1.5 mb-1.5">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">NODE-01</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">1.2ms // 100%</span>
+</div>
+<!-- Node Item 2 -->
+<div class="p-3 border border-outline-variant/30 bg-surface-container-low text-center">
+<div class="flex items-center justify-center gap-1.5 mb-1.5">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">NODE-02</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">1.1ms // 98%</span>
+</div>
+<!-- Node Item 3 -->
+<div class="p-3 border border-outline-variant/30 bg-surface-container-low text-center">
+<div class="flex items-center justify-center gap-1.5 mb-1.5">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">NODE-03</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">1.4ms // 99%</span>
+</div>
+<!-- Node Item 4 -->
+<div class="p-3 border border-outline-variant/30 bg-surface-container-low text-center">
+<div class="flex items-center justify-center gap-1.5 mb-1.5">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">NODE-04</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">1.2ms // 97%</span>
+</div>
+<!-- Node Item 5 -->
+<div class="p-3 border border-outline-variant/30 bg-surface-container-low text-center">
+<div class="flex items-center justify-center gap-1.5 mb-1.5">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">NODE-05</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">1.0ms // 100%</span>
+</div>
+<!-- Node Item 6 -->
+<div class="p-3 border border-outline-variant/30 bg-surface-container-low text-center">
+<div class="flex items-center justify-center gap-1.5 mb-1.5">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">NODE-06</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">1.3ms // 99%</span>
+</div>
+<!-- Node Item 7 -->
+<div class="p-3 border border-outline-variant/30 bg-surface-container-low text-center">
+<div class="flex items-center justify-center gap-1.5 mb-1.5">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">NODE-07</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">1.5ms // 98%</span>
+</div>
+<!-- Node Item 8 -->
+<div class="p-3 border border-outline-variant/30 bg-surface-container-low text-center">
+<div class="flex items-center justify-center gap-1.5 mb-1.5">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">NODE-08</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">1.1ms // 100%</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 04 // INTERACTIVE TERMINAL PLAYGROUND -->
+<section class="border-b border-outline-variant/30 px-space-lg lg:px-margin-lg py-20" id="terminal-section">
+<div class="max-w-7xl mx-auto">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-outline-variant/20 pb-6 gap-4">
+<div>
+<div class="font-label-sm text-label-sm text-primary tracking-widest uppercase mb-1">
+              SEC.04 // INTERACTIVE PLAYGROUND
+            </div>
+<h2 class="text-headline-xl font-headline-xl text-on-surface">
+              Hermes Neural Terminal
+            </h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase">SIMULATING MULTI-STAGE REASONING SCRATCHPAD</span>
+</div>
+<!-- Terminal Chassis -->
+<div class="relative bg-surface-container-lowest border border-outline-variant/40 shadow-2xl">
+<span class="crosshair-tl">+</span>
+<span class="crosshair-tr">+</span>
+<span class="crosshair-bl">+</span>
+<span class="crosshair-br">+</span>
+<!-- Terminal Topbar -->
+<div class="flex items-center justify-between px-4 py-3 border-b border-outline-variant/30 bg-surface-container-low">
 <div class="flex items-center gap-2">
-<span class="w-2.5 h-2.5 bg-red-500/80 inline-block"></span>
-<span class="w-2.5 h-2.5 bg-yellow-500/80 inline-block"></span>
-<span class="w-2.5 h-2.5 bg-green-500/80 inline-block"></span>
-<span class="ml-2 text-on-surface-variant">stellel-daemon@node-asus:~# ./telemetry_daemon.sh --stream</span>
+<span class="w-3 h-3 bg-outline-variant/60 block"></span>
+<span class="w-3 h-3 bg-outline-variant/40 block"></span>
+<span class="w-3 h-3 bg-primary block"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant ml-3">stellel@nous-matrix: ~ (zsh)</span>
 </div>
-<span class="text-primary">PORT: 3000 // STATUS 200 OK</span>
+<div class="font-label-sm text-label-sm text-outline">
+              SESSION: 0xFD42 // HERMES-3-70B
+            </div>
 </div>
-<!-- Terminal Output Buffer -->
-<div class="p-6 font-title-md text-title-md text-on-surface space-y-3 font-mono leading-relaxed overflow-x-auto text-sm">
-<div class="text-on-surface-variant">
-            [+] PROXMOX HYPERVISOR VE 8.2-1 // KERNEL: Linux 6.8.4-pve x86_64
-          </div>
-<div class="text-on-surface-variant">
-            [+] CLOUDFLARE ZERO TRUST TUNNEL: <span class="text-primary">stellel.com</span> [ACTIVE :: 0.8ms :: ZERO OPEN WAN PORTS]
-          </div>
-<div class="text-secondary">
-            [+] COGNITIVE SWARM ORCHESTRATOR: Nous Hermes 3 Llama-3.1 8B Instruct // BF16 Native
-          </div>
-<!-- Dokploy Container Matrix -->
-<div class="my-4 p-3 bg-surface-container-lowest/80 border border-outline-variant/30 space-y-1.5">
-<div class="text-primary font-bold">--- DOKPLOY SERVICE TOPOLOGY ---</div>
-<div class="grid grid-cols-1 sm:grid-cols-4 gap-2 text-xs">
-<span class="text-on-surface-variant">CONTAINER: <strong class="text-on-surface">dokploy-proxy</strong></span>
-<span class="text-on-surface-variant">IMAGE: Traefik v3.0</span>
-<span class="text-on-surface-variant">UPTIME: 98.4 Days</span>
-<span class="text-emerald-400">● HEALTHY</span>
+<!-- Terminal Buffer Code Output -->
+<div class="p-6 md:p-8 font-code-md text-code-md text-on-surface space-y-4 overflow-x-auto leading-relaxed">
+<!-- Command Invocation -->
+<div class="flex items-center gap-2 text-primary font-bold">
+<span>stellel@nous-matrix:~$</span>
+<span class="text-on-surface">hermes run --model hermes-3-70b --tools enabled --context "Autonomous Tensor Dequantization"</span>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-4 gap-2 text-xs">
-<span class="text-on-surface-variant">CONTAINER: <strong class="text-on-surface">hermes-agent-worker</strong></span>
-<span class="text-on-surface-variant">IMAGE: Python 3.12-vllm</span>
-<span class="text-on-surface-variant">MEM: 18.2GB / 24GB</span>
-<span class="text-emerald-400">● RUNNING</span>
+<!-- Telemetry System Output -->
+<div class="text-outline-variant">
+              [SYSTEM]: Model weights loaded (70.6B params FP8). Context window initialized to 128k tokens.<br/>
+              [SYSTEM]: Sandboxed Tool Registry: [python_repl, arxiv_search, execute_shell, vector_retrieve]
+            </div>
+<!-- Agent Reasoning Scratchpad -->
+<div class="p-4 bg-surface-container-low/60 border-l-2 border-primary space-y-2">
+<span class="text-primary font-label-sm text-label-sm tracking-widest block uppercase">&lt;thinking&gt;</span>
+<p class="text-on-surface-variant font-code-md text-code-md">
+                1. Analyzing user objective: Verify dynamic scaling factor of tensor matrix FP8 dequantization across high-bandwidth memory.<br/>
+                2. Formulate verification code using CUDA / Triton kernel wrapper.<br/>
+                3. Dispatch function call to 'python_repl' tool to execute simulated latency evaluation under memory pressure.<br/>
+                4. Self-correct if output discrepancy exceeds epsilon 1e-4.
+              </p>
+<span class="text-primary font-label-sm text-label-sm tracking-widest block uppercase">&lt;/thinking&gt;</span>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-4 gap-2 text-xs">
-<span class="text-on-surface-variant">CONTAINER: <strong class="text-on-surface">queapp-spatial-db</strong></span>
-<span class="text-on-surface-variant">IMAGE: PostGIS 16-3.4</span>
-<span class="text-on-surface-variant">GEOINDEX: GIST Active</span>
-<span class="text-emerald-400">● SYNCED</span>
+<!-- Function Call JSON Execution -->
+<div class="p-4 bg-surface-container-lowest border border-outline-variant/30 space-y-1">
+<div class="text-secondary font-bold font-label-sm text-label-sm uppercase">→ DISPATCHING TOOL CALL: python_repl</div>
+<pre class="text-tertiary-fixed font-code-md text-code-md"><code>{
+  "tool": "python_repl",
+  "arguments": {
+    "code": "import torch\nt = torch.randn(4096, 4096, dtype=torch.bfloat16)\nfp8_t = t.to(torch.float8_e4m3fn)\nerr = (t - fp8_t.to(torch.bfloat16)).abs().mean()\nprint(f'DEQUANT_DELTA_EPSILON: {err.item():.6f}')"
+  }
+}</code></pre>
 </div>
+<!-- Tool Return Telemetry -->
+<div class="text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+<span>[TOOL_OUTPUT]: DEQUANT_DELTA_EPSILON: 0.000318 // EXEC_TIME: 1.84ms // STATUS: SUCCESS</span>
 </div>
-<div class="text-on-surface">
-<span class="text-primary">stellel-daemon@node-asus:~#</span> hermes_cli --exec "run_reasoning_cycle --directive 'Ingest SIPSA Colombian crop indices and evaluate cold-chain anomalies'"
-          </div>
-<div class="text-tertiary pl-4 border-l-2 border-primary/60">
-            [HEURISTIC] Loading geospatial bounding boxes for Cundinamarca &amp; Antioquia...<br/>
-            [HEURISTIC] Multi-modal tool call initiated: `fetch_dane_market_feed(timestamp='2026-03-30')`<br/>
-            [HEURISTIC] Swarm consensus converged at 99.4% confidence across 12 distributed threads.
-          </div>
-<div>
-<span class="text-primary">stellel-daemon@node-asus:~#</span> <span class="terminal-cursor"></span>
-</div>
-</div>
-</div>
-</section>
-<!-- SECTION 4: RESEARCH & OPEN SOURCE ARTIFACTS -->
-<section class="space-y-8" id="ecosystem">
-<div class="flex items-center justify-between border-b border-outline-variant/30 pb-4">
-<div>
-<span class="font-label-sm text-label-sm text-primary uppercase">[ SECTOR 03 // FOLIO &amp; ARTIFACTS ]</span>
-<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1">Research Repositories &amp; Protocols</h2>
-</div>
-<a class="hidden sm:inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:underline" href="https://github.com/Stellel-One" rel="noopener noreferrer" target="_blank">
-<span>GITHUB.COM/STELLEL-ONE</span>
-<span class="material-symbols-outlined text-[14px]">open_in_new</span>
-</a>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<!-- Repo 1: Stellel.com Portal -->
-<div class="corner-bracket bg-surface-container-lowest border border-outline-variant/30 p-6 flex flex-col justify-between hover:border-primary/60 transition-all group">
-<div class="space-y-3">
-<div class="flex items-center justify-between">
-<span class="font-label-sm text-label-sm text-primary">REPO_HASH: 0x8F9C4A</span>
-<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm text-on-surface-variant">MIT LICENSE</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors flex items-center gap-2">
-<span>Stellel-One/stellel.com</span>
-<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_outward</span>
-</h3>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-              Esoteric developer portfolio and autonomous telemetry interface. Engineered with hyper-optimized Tailwind CSS design systems, Cloudflare Edge worker integration, and real-time Proxmox socket telemetry.
-            </p>
-</div>
-<div class="pt-4 mt-6 border-t border-outline-variant/20 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
-<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary inline-block"></span> TypeScript / Astro / FastAPI</span>
-<span class="text-primary">★ 142 STARS</span>
-</div>
-</div>
-<!-- Repo 2: Hermes Tool-Calling Harness -->
-<div class="corner-bracket bg-surface-container-lowest border border-outline-variant/30 p-6 flex flex-col justify-between hover:border-primary/60 transition-all group">
-<div class="space-y-3">
-<div class="flex items-center justify-between">
-<span class="font-label-sm text-label-sm text-primary">REPO_HASH: 0x3D72B1</span>
-<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm text-on-surface-variant">APACHE 2.0</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors flex items-center gap-2">
-<span>Hermes-Tool-Calling-Harness</span>
-<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_outward</span>
-</h3>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-              Autonomous reasoning loops connecting Nous Hermes 3 to ephemeral Docker sandbox environments. Features structured JSON-schema validation, AST security inspection, and back-propagation error reflection.
-            </p>
-</div>
-<div class="pt-4 mt-6 border-t border-outline-variant/20 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
-<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary inline-block"></span> Python 3.12 / vLLM / Docker</span>
-<span class="text-primary">★ 529 STARS</span>
-</div>
-</div>
-<!-- Repo 3: QueApp Geomarket Pipeline -->
-<div class="corner-bracket bg-surface-container-lowest border border-outline-variant/30 p-6 flex flex-col justify-between hover:border-primary/60 transition-all group">
-<div class="space-y-3">
-<div class="flex items-center justify-between">
-<span class="font-label-sm text-label-sm text-primary">REPO_HASH: 0x91AA4E</span>
-<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm text-on-surface-variant">PROPRIETARY // CORE</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors flex items-center gap-2">
-<span>QueApp-Geomarket-Pipeline</span>
-<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_outward</span>
-</h3>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-              Spatial market clearinghouse for Colombian agricultural producers. Consumes real-time DANE/SIPSA pricing records, computes optimal transit routes across Andean corridors, and visualizes demand heatmaps.
-            </p>
-</div>
-<div class="pt-4 mt-6 border-t border-outline-variant/20 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
-<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary inline-block"></span> PostGIS / Rust / GeoJSON</span>
-<span class="text-primary">DEPLOYED PROD</span>
-</div>
-</div>
-<!-- Repo 4: Homelab IaC Proxmox -->
-<div class="corner-bracket bg-surface-container-lowest border border-outline-variant/30 p-6 flex flex-col justify-between hover:border-primary/60 transition-all group">
-<div class="space-y-3">
-<div class="flex items-center justify-between">
-<span class="font-label-sm text-label-sm text-primary">REPO_HASH: 0x05E41C</span>
-<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm text-on-surface-variant">MIT LICENSE</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors flex items-center gap-2">
-<span>Homelab-IaC-Proxmox-Dokploy</span>
-<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_outward</span>
-</h3>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-              Declarative Infrastructure as Code bootstrapping for sovereign personal AI compute clusters. Automates Cloudflare Zero Trust daemon provisioning, storage zpools, and Dokploy CI/CD stacks.
-            </p>
-</div>
-<div class="pt-4 mt-6 border-t border-outline-variant/20 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
-<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary inline-block"></span> Ansible / Terraform / Bash</span>
-<span class="text-primary">★ 312 STARS</span>
+<!-- Final Agent Conclusion -->
+<div class="text-on-surface pt-2">
+<span class="text-primary font-bold">Hermes:</span> Precision verified. FP8 E4M3 tensor quantization introduces zero catastrophic degradation for transformer multi-head self-attention projections. Ready to dispatch weights across nodes.
+            </div>
+<!-- Terminal Cursor -->
+<div class="flex items-center gap-2 text-primary pt-2">
+<span>stellel@nous-matrix:~$</span>
+<span class="w-2.5 h-5 bg-primary animate-pulse inline-block"></span>
 </div>
 </div>
 </div>
-</section>
-<!-- SECTION 5: ESOTERIC ALCHEMICAL SEAL & CREED -->
-<section class="border border-outline-variant/40 bg-surface-container-lowest/80 p-8 sm:p-12 relative overflow-hidden">
-<!-- Watermark Sigil -->
-<div class="absolute -right-16 -bottom-16 opacity-5 pointer-events-none text-primary">
-<svg class="w-96 h-96" fill="currentColor" viewbox="0 0 200 200">
-<circle cx="100" cy="100" fill="none" r="90" stroke="currentColor" stroke-width="2"></circle>
-<polygon fill="none" points="100,15 185,150 15,150" stroke="currentColor" stroke-width="2"></polygon>
-<polygon fill="none" points="100,185 15,50 185,50" stroke="currentColor" stroke-width="2"></polygon>
-</svg>
-</div>
-<div class="max-w-2xl space-y-4">
-<div class="flex items-center gap-2 text-primary font-label-sm text-label-sm">
-<span>◆</span>
-<span class="tracking-widest uppercase">THE HERMETIC PRINCIPLE OF SYNTHETIC REASONING</span>
-</div>
-<blockquote class="font-monumental text-xl sm:text-2xl text-on-surface italic font-medium leading-relaxed">
-          “Quod est superius est sicut quod est inferius, ad perpetranda miracula rei unius.”
-        </blockquote>
-<p class="font-body-md text-body-md text-on-surface-variant">
-          That which is above is like that which is below: As weights exist in high-dimensional latent manifolds, so must deterministic systems manifest in the sovereign silicon of the physical homelab.
-        </p>
 </div>
 </section>
 </main>
-<!-- Shared Footer Component (Exact match to JSON Blueprint) -->
-<footer class="w-full py-space-xl px-space-lg md:px-margin border-t border-outline-variant/30 max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-space-md bg-surface-container-lowest dark:bg-surface-container-lowest">
-<!-- Brand & Latin Creed Metadata -->
-<div class="flex flex-col items-center md:items-start space-y-1">
-<div class="font-headline-sm text-headline-sm font-bold text-on-surface dark:text-on-surface tracking-tight">
-        STELLEL
-      </div>
-<div class="text-label-sm font-label-sm text-on-surface-variant dark:text-on-surface-variant">
-        © 2025 STELLEL SYSTEMS // RUNTIME: DOKPLOY // CLOUDFLARE ZERO TRUST SECURED
-      </div>
+<!-- ================= FOOTER (Shared Component Anchor) ================= -->
+<footer class="relative bg-surface-container-lowest border-t border-outline-variant/30 w-full px-space-lg lg:px-margin-lg py-space-xl overflow-hidden">
+<!-- Faint Classical Athena Seal Watermark in Footer -->
+<div class="absolute right-8 bottom-4 opacity-5 pointer-events-none w-64 h-64">
+<img alt="Stellel Seal Background Watermark" class="w-full h-full object-contain filter grayscale opacity-20" src="/assets/nous-stamp-dark.svg"/>
 </div>
-<!-- Navigation Footer Links from JSON Anchor -->
-<div class="flex flex-wrap justify-center items-center gap-6">
-<a class="text-on-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-primary dark:hover:text-primary hover:underline duration-150 transition-colors" href="#agents">
-        Hermes Agent
-      </a>
-<a class="text-on-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-primary dark:hover:text-primary hover:underline duration-150 transition-colors" href="#queapp">
-        QueApp Architecture
-      </a>
-<a class="text-on-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-primary dark:hover:text-primary hover:underline duration-150 transition-colors" href="#telemetry">
-        Homelab Metrics
-      </a>
-<a class="text-on-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-primary dark:hover:text-primary hover:underline duration-150 transition-colors" href="#security">
-        Security Telemetry
-      </a>
-<a class="text-on-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-primary dark:hover:text-primary hover:underline duration-150 transition-colors" href="#repos">
-        Source Repositories
-      </a>
+<div class="max-w-7xl mx-auto flex flex-col gap-12 relative z-10">
+<!-- Top Row: Brand & Latin Motto -->
+<div class="flex flex-col md:flex-row md:items-center justify-between border-b border-outline-variant/30 pb-8 gap-6">
+<div>
+<span class="text-headline-md font-headline-md text-on-surface uppercase tracking-widest block mb-2">
+            STELLEL RESEARCH
+          </span>
+<p class="font-label-sm text-label-sm text-primary tracking-widest">
+            INTELLECTUS ET SAPIENTIA AD ASTRA PER COGNITIONEM
+          </p>
+</div>
+<div class="inline-flex items-center gap-3 border border-outline-variant/40 bg-surface-container-low px-4 py-2">
+<span class="w-2 h-2 bg-primary rounded-none"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">
+            ALL 12 MATRIX NODES OPERATIONAL • LATENCY: 14MS
+          </span>
+</div>
+</div>
+<!-- Links Grid -->
+<div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block mb-4">MODELS</span>
+<ul class="space-y-2 font-label-sm text-label-sm text-outline">
+<li><a class="hover:text-primary transition-colors" href="#">Hermes 3 70B</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Hermes 3 8B</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Hermes 3 405B</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Stellel-Think</a></li>
+</ul>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block mb-4">RESEARCH</span>
+<ul class="space-y-2 font-label-sm text-label-sm text-outline">
+<li><a class="hover:text-primary transition-colors" href="#">arXiv Preprints</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">DisTrO Protocol</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Atropos Swarms</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">RLHF Papers</a></li>
+</ul>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block mb-4">REPOSITORIES</span>
+<ul class="space-y-2 font-label-sm text-label-sm text-outline">
+<li><a class="hover:text-primary transition-colors" href="#">GitHub Matrix</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Hugging Face Org</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Fine-tuning CLI</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Datasets</a></li>
+</ul>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block mb-4">COLLECTIVE</span>
+<ul class="space-y-2 font-label-sm text-label-sm text-outline">
+<li><a class="hover:text-primary transition-colors" href="#">Manifesto</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Governance</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Compute Grants</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers / Nodes</a></li>
+</ul>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block mb-4">COMMUNITY</span>
+<ul class="space-y-2 font-label-sm text-label-sm text-outline">
+<li><a class="hover:text-primary transition-colors" href="#">Discord Matrix</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">X (Twitter)</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Security Ledger</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Terms of Protocol</a></li>
+</ul>
+</div>
+</div>
+<!-- Bottom Bar with Exact Footer Anchors -->
+<div class="pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+<p class="font-body-sm text-body-sm text-outline">
+          © MMXIV-MMXXV STELLEL RESEARCH INC. ALL RIGHTS RESERVED. OPERATIONAL MATRIX: OPTIMAL // NODE 0x9B1A
+        </p>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-label-sm text-label-sm text-outline uppercase tracking-widest hover:text-primary transition-colors" href="#">Terms of Protocol</a>
+<a class="font-label-sm text-label-sm text-outline uppercase tracking-widest hover:text-primary transition-colors" href="#">Autonomous Privacy</a>
+<a class="font-label-sm text-label-sm text-outline uppercase tracking-widest hover:text-primary transition-colors" href="#">arXiv Preprints</a>
+<a class="font-label-sm text-label-sm text-outline uppercase tracking-widest hover:text-primary transition-colors" href="#">Node Telemetry</a>
+<a class="font-label-sm text-label-sm text-outline uppercase tracking-widest hover:text-primary transition-colors" href="#">Security Ledger</a>
+</div>
+</div>
 </div>
 </footer>
 </body></html>

@@ -3,10 +3,11 @@ FROM nginx:alpine
 # Remove default nginx website
 RUN rm -rf /usr/share/nginx/html/*
 
-# Copy website assets
+# Copy website index and assets
 COPY index.html /usr/share/nginx/html/
+COPY assets/ /usr/share/nginx/html/assets/
 
-# Optional: default nginx configuration with gzip and security headers
+# Default nginx configuration with gzip and security headers
 RUN echo 'server { \
     listen 80; \
     server_name localhost; \
